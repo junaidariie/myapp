@@ -10,3 +10,4 @@ langgraph
 faiss-cpu
 edge-tts
 groq
+pypdf
