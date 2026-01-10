@@ -87,7 +87,7 @@ def get_llm(model_name: str):
     elif model_name == "qwen3":
         return llm_qwen3
     else:
-        return llm_gpt   # fallback if no match
+        return llm_gpt  
 
 #===========================================
 # Search tool
@@ -254,7 +254,6 @@ Final Answer:
 # Graph Declaration
 #===========================================
 
-# Keeping MemorySaver as requested (Note: RAM only, wipes on restart)
 memory = MemorySaver()
 graph = StateGraph(Ragbot_State)
 
@@ -307,4 +306,5 @@ print(f"Bot: {response}")
 
 # User asks for name (RAG and Web are OFF)
 response = ask_bot("What is my name?", thread_id="session_A")
+
 print(f"Bot: {response}")"""
